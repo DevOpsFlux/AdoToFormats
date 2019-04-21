@@ -1,4 +1,4 @@
-# AdoToFormats
+# AdoToFormats Excute Program
 MS DB Procedure Call Data XML/JSON 포맷 파일 생성
 
 ## 프로젝트 정보 및 버젼
@@ -33,4 +33,17 @@ DB Connection 및 Log Path 설정
  > C:\Windows\System32
  > C:\Windows\SysWOW64
 
+> CMD > AdoToFormats /H
 
+| 필수/옵션 | 인수 | 내용 |
+| -------- | -------- |
+| 필수 | /F [FORMAT]   | XML, JSON  |
+| 필수 | /C [CONNETTION DB]   | 연결 DB -> Config [ DevDB / RealDB]  |
+| 필수 | /S [SQLCOMMAND]   | SQL Query 문자열
+| 필수 | /O [OUTPUT FILEPATH]   | 파일 저장 경로
+
+| 옵션 | /I [IDENTED OPTION]   | XML, JSON 들여쓰기 Y/N [Default:N]
+| 옵션 | /D [CDATA OPTION]   | XML CDATA Y/M(Filed PreFix:CDATA_)/N [Default:N]  |
+| 옵션 | /T [COMMAND TIMEOUT]   | SQL TimeOut 설정 [Default:180(초:3분)]
+| 옵션 | /X [EMPTY]  | 빈 파일생성 Y/N [Default:N (빈 파일생성 안함)] 
+| 옵션 | /H [EXE INFO]  | 실행 옵션 정보
