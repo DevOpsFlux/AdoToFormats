@@ -49,14 +49,15 @@ DB Connection 및 Log Path 설정
 * /Sample/AdoToFormats_XML.bat
 
 * testXML.bat :
-> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '1'" /O "D:\Batch\Data\Test\TestXML.xml" /I "Y" /D "M"
-> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestXML2.xml" /I "Y" /D "Y"
-> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestXML3.xml" /I "Y"
-> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '3'" /O "D:\Batch\Data\Test\TestXML4.xml" /I "Y" /D "Y" /X "Y"
-
+```
+AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '1'" /O "D:\Batch\Data\Test\TestXML.xml" /I "Y" /D "M"
+AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestXML2.xml" /I "Y" /D "Y"
+AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestXML3.xml" /I "Y"
+AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '3'" /O "D:\Batch\Data\Test\TestXML4.xml" /I "Y" /D "Y" /X "Y"
+```
 * testJSON.bat :
 ```
-	AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '1'" /O "D:\Batch\Data\Test\TestJSON.json" /I "Y"
-	AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestJSON2.json" /I "N"
-	AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '3'" /O "D:\Batch\Data\Test\TestJSON3.json" /I "N" /X "Y“
+AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '1'" /O "D:\Batch\Data\Test\TestJSON.json" /I "Y"
+AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestJSON2.json" /I "N"
+AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '3'" /O "D:\Batch\Data\Test\TestJSON3.json" /I "N" /X "Y“
 ```
