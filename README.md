@@ -43,7 +43,6 @@ DB Connection 및 Log Path 설정
 | 필수 | /C [CONNETTION DB]   | 연결 DB -> Config [ DevDB / RealDB]  |
 | 필수 | /S [SQLCOMMAND]   | SQL Query 문자열
 | 필수 | /O [OUTPUT FILEPATH]   | 파일 저장 경로
-
 | 옵션 | /I [IDENTED OPTION]   | XML, JSON 들여쓰기 Y/N [Default:N]
 | 옵션 | /D [CDATA OPTION]   | XML CDATA Y/M(Filed PreFix:CDATA_)/N [Default:N]  |
 | 옵션 | /T [COMMAND TIMEOUT]   | SQL TimeOut 설정 [Default:180(초:3분)]  |
