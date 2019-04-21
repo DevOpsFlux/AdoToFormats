@@ -34,10 +34,11 @@ DB Connection 및 Log Path 설정
 * /Sample/AdoToFormats_XML.bat
 
 
+## 프로그램 실행 정보
 > CMD > AdoToFormats /H
 
 | 필수/옵션 | 인수 | 내용 |
-| -------- | -------- |
+| -------- | -------- | -------- |
 | 필수 | /F [FORMAT]   | XML, JSON  |
 | 필수 | /C [CONNETTION DB]   | 연결 DB -> Config [ DevDB / RealDB]  |
 | 필수 | /S [SQLCOMMAND]   | SQL Query 문자열
