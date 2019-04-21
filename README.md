@@ -6,9 +6,9 @@ MS DB Procedure Call Data XML/JSON 포맷 파일 생성
 ### *[ AdoToFormats Solution ]	
 ### *[ AdoToFormats.csproj ]	
 
-| 프로젝트 | 설명 | .NET버젼 | EntFramework버젼 |
+| 프로젝트 | 설명 | .NET버젼 | AdoToFormats버젼 |
 | -------- | -------- | -------- | -------- |
-| AdoToFormats | 티켓 모니터링 시스템 1.0	| .NET 4.5/MVC5	| EntFramework 1.0.0.0 |
+| AdoToFormats | 티켓 모니터링 시스템 1.0	| .NET 4.5/MVC5	| AdoToFormats 1.0.0.0 |
 
 ## Config 정보
 AdoToFormats.config
