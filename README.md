@@ -20,11 +20,6 @@ DB Connection 및 Log Path 설정
 ## 프로젝트 설정 및 사용 메뉴얼
 * /Doc/AdoToFormats_메뉴얼.pptx
 
-## 프로그램 사용 샘플
-* /Sample/AdoToFormats_Help.bat
-* /Sample/AdoToFormats_JSON.bat
-* /Sample/AdoToFormats_XML.bat
-
 # 프로그램 환경 설정
 - AdoToFormats.exe
  > C:\Windows
@@ -32,6 +27,12 @@ DB Connection 및 Log Path 설정
  > Environment.SystemDirectory
  > C:\Windows\System32
  > C:\Windows\SysWOW64
+
+## 프로그램 사용 샘플
+* /Sample/AdoToFormats_Help.bat
+* /Sample/AdoToFormats_JSON.bat
+* /Sample/AdoToFormats_XML.bat
+
 
 > CMD > AdoToFormats /H
 
