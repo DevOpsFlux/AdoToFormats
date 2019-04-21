@@ -44,6 +44,6 @@ DB Connection 및 Log Path 설정
 
 | 옵션 | /I [IDENTED OPTION]   | XML, JSON 들여쓰기 Y/N [Default:N]
 | 옵션 | /D [CDATA OPTION]   | XML CDATA Y/M(Filed PreFix:CDATA_)/N [Default:N]  |
-| 옵션 | /T [COMMAND TIMEOUT]   | SQL TimeOut 설정 [Default:180(초:3분)]
-| 옵션 | /X [EMPTY]  | 빈 파일생성 Y/N [Default:N (빈 파일생성 안함)] 
-| 옵션 | /H [EXE INFO]  | 실행 옵션 정보
+| 옵션 | /T [COMMAND TIMEOUT]   | SQL TimeOut 설정 [Default:180(초:3분)]  |
+| 옵션 | /X [EMPTY]  | 빈 파일생성 Y/N [Default:N (빈 파일생성 안함)]   |
+| 옵션 | /H [EXE INFO]  | 실행 옵션 정보  |
