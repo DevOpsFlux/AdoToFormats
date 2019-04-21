@@ -1,7 +1,7 @@
 # AdoToFormats Excute Program
 MS DB Procedure Call Data XML/JSON 포맷 파일 생성
 
-## 프로젝트 정보 및 버젼
+## 1. 프로젝트 정보 및 버젼
 
 ### *[ AdoToFormats Solution ]	
 ### *[ AdoToFormats.csproj ]	
@@ -10,17 +10,17 @@ MS DB Procedure Call Data XML/JSON 포맷 파일 생성
 | -------- | -------- | -------- | -------- |
 | AdoToFormats | 티켓 모니터링 시스템 1.0	| .NET 3.5	| AdoToFormats 1.0.0.0 |
 
-## Config 정보
+## 2. Config 정보
 AdoToFormats.config
 DB Connection 및 Log Path 설정
 
-## 라이브러리 정보
+## 3. Library 정보
 * Newtonsoft.Json.dll 3.5.0.0	
 
-## 프로젝트 설정 및 사용 메뉴얼
+## 4. 프로젝트 설정 및 사용 메뉴얼
 * /Doc/AdoToFormats_메뉴얼.pptx
 
-# 프로그램 환경 설정
+## 5. 프로그램 환경 설정
 - AdoToFormats.exe
  > C:\Windows
 - AdoToFormats.config 
@@ -28,7 +28,7 @@ DB Connection 및 Log Path 설정
  > C:\Windows\System32
  > C:\Windows\SysWOW64
 
-## 프로그램 실행 정보
+## 6. 프로그램 실행 정보
 > CMD > AdoToFormats /H
 
 | 필수/옵션 | 인수 | 내용 |
@@ -43,7 +43,7 @@ DB Connection 및 Log Path 설정
 | 옵션 | /X [EMPTY]  | 빈 파일생성 Y/N [Default:N (빈 파일생성 안함)]   |
 | 옵션 | /H [EXE INFO]  | 실행 옵션 정보  |
 
-## 프로그램 사용 샘플
+## 7. 프로그램 사용 샘플
 * /Sample/AdoToFormats_Help.bat
 * /Sample/AdoToFormats_JSON.bat
 * /Sample/AdoToFormats_XML.bat
