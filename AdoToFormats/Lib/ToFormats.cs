@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 using System.IO;
 
 using Newtonsoft.Json;
-using GLASS;
+using AdoToFormats.Lib;
 
 namespace AdoToFormats.Lib
 {
@@ -53,7 +53,7 @@ namespace AdoToFormats.Lib
 
             bool bSuccess = false;
             string strLog = string.Empty;
-            GLASS.FileLog log = new GLASS.FileLog(Config.GetLogFilePath());
+            FileLog log = new FileLog(Config.GetLogFilePath());
             //log.WriteLine("DEBUG Start 1 ");
             //GLASS.TraceLog tlog = new GLASS.TraceLog();
             //tlog.WriteLine("DEBUG Start 1 ");
@@ -248,7 +248,7 @@ namespace AdoToFormats.Lib
 
             bool bSuccess = false;
             string strLog = string.Empty;
-            GLASS.FileLog log = new GLASS.FileLog(Config.GetLogFilePath());
+            FileLog log = new FileLog(Config.GetLogFilePath());
 
             try
             {

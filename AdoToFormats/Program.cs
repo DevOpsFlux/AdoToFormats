@@ -140,7 +140,7 @@ namespace AdoToFormats
                 if (!bSuccess || bSuccess)
                 {                    
                     string strLog = string.Empty;
-                    GLASS.FileLog log = new GLASS.FileLog(GLASS.Config.GetLogFilePath());
+                    FileLog log = new FileLog(Config.GetLogFilePath());
                     strLog = string.Format("bSuccess : {0} , ErrMsg : {1}", bSuccess.ToString(), strErrMsg.ToString());
                     log.WriteLine(strLog.ToString());
                     strLog = GetArgsInfoStr(strFormat, strConFlag, strSql, strSavePath, strIndentedYN, strCDataYN, strDBTimeOutSec, strEmptyYN);

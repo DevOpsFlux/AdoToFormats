@@ -6,7 +6,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Diagnostics;
 
-namespace GLASS
+namespace AdoToFormats.Lib
 {
     public interface ILog
     {
@@ -62,8 +62,8 @@ namespace GLASS
 
         public void WriteProcLog(SqlCommand cmd)
         {
-            string sFile = GLASS.Config.GetLogFilePath();
-            GLASS.FileLog webLog = new GLASS.FileLog(sFile);
+            string sFile = Config.GetLogFilePath();
+            FileLog webLog = new FileLog(sFile);
             StringBuilder websb = new StringBuilder();
 
             string query = string.Format("Exec {0} ", cmd.CommandText);

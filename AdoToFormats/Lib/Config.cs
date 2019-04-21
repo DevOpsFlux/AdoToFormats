@@ -4,7 +4,7 @@ using System.IO;
 using System.Xml;
 //using System.Configuration;
 
-namespace GLASS
+namespace AdoToFormats.Lib
 {
     class Config
     {

@@ -3,7 +3,7 @@ using System.Text;
 using System.Data;
 using System.Data.Common;
 
-namespace GLASS
+namespace AdoToFormats.Lib
 {
     class AdoNet<ConnectionT, AdaptorT, DataReaderT> : IDisposable
         where ConnectionT : class, IDbConnection, new()
@@ -132,7 +132,7 @@ namespace GLASS
     }
 
     class AdoNetSql :
-        GLASS.AdoNet<
+        AdoToFormats.Lib.AdoNet<
             System.Data.SqlClient.SqlConnection,
             System.Data.SqlClient.SqlDataAdapter,
             System.Data.SqlClient.SqlDataReader
@@ -141,7 +141,7 @@ namespace GLASS
     }
 
     class AdoNetOdbc :
-        GLASS.AdoNet<
+        AdoToFormats.Lib.AdoNet<
             System.Data.Odbc.OdbcConnection,
             System.Data.Odbc.OdbcDataAdapter,
             System.Data.Odbc.OdbcDataReader
@@ -150,7 +150,7 @@ namespace GLASS
     }
 
     class AdoNetOleDb :
-        GLASS.AdoNet<
+        AdoToFormats.Lib.AdoNet<
             System.Data.OleDb.OleDbConnection,
             System.Data.OleDb.OleDbDataAdapter,
             System.Data.OleDb.OleDbDataReader

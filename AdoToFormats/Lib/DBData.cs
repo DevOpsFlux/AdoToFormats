@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.EnterpriseServices;
 using System.Text;
 
-namespace GLASS
+namespace AdoToFormats.Lib
 {
     [JustInTimeActivation(true)]
     [Transaction(TransactionOption.Supported)]
@@ -21,7 +21,7 @@ namespace GLASS
             try
             {
 
-                using (GLASS.AdoNetSql ado = GLASS.DBUtil.OpenAdoNetSql())
+                using (AdoToFormats.Lib.AdoNetSql ado = AdoToFormats.Lib.DBUtil.OpenAdoNetSql())
                 {
                     ds = ado.ExecuteDataSet(cmd);
                     ado.Dispose();
@@ -32,7 +32,7 @@ namespace GLASS
 
                 try
                 {
-                    GLASS.FileLog log = new GLASS.FileLog(GLASS.Config.GetLogFilePath());
+                    AdoToFormats.Lib.FileLog log = new AdoToFormats.Lib.FileLog(AdoToFormats.Lib.Config.GetLogFilePath());
                     log.WriteLine(ex.ToString());
                 }
                 catch (Exception) { }
@@ -49,7 +49,7 @@ namespace GLASS
 
             try
             {
-                using (GLASS.AdoNetSql ado = GLASS.DBUtil.OpenAdoNetSql())
+                using (AdoToFormats.Lib.AdoNetSql ado = AdoToFormats.Lib.DBUtil.OpenAdoNetSql())
                 {
                     nRows = ado.Execute(cmd);
                     ado.Dispose();
@@ -59,7 +59,7 @@ namespace GLASS
             {
                 try
                 {
-                    GLASS.FileLog log = new GLASS.FileLog(GLASS.Config.GetLogFilePath());
+                    AdoToFormats.Lib.FileLog log = new AdoToFormats.Lib.FileLog(AdoToFormats.Lib.Config.GetLogFilePath());
                     log.WriteLine(ex.ToString());
                 }
                 catch (Exception) { }
@@ -72,9 +72,9 @@ namespace GLASS
 
     class DBUtil
     {
-        public static GLASS.AdoNetSql OpenAdoNetSql()
+        public static AdoToFormats.Lib.AdoNetSql OpenAdoNetSql()
         {
-            GLASS.AdoNetSql ado = new GLASS.AdoNetSql();
+            AdoToFormats.Lib.AdoNetSql ado = new AdoToFormats.Lib.AdoNetSql();
             ado.Open(Config.GetConnectionString());
 
             return ado;
