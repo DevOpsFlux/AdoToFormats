@@ -28,12 +28,6 @@ DB Connection 및 Log Path 설정
  > C:\Windows\System32
  > C:\Windows\SysWOW64
 
-## 프로그램 사용 샘플
-* /Sample/AdoToFormats_Help.bat
-* /Sample/AdoToFormats_JSON.bat
-* /Sample/AdoToFormats_XML.bat
-
-
 ## 프로그램 실행 정보
 > CMD > AdoToFormats /H
 
@@ -48,3 +42,21 @@ DB Connection 및 Log Path 설정
 | 옵션 | /T [COMMAND TIMEOUT]   | SQL TimeOut 설정 [Default:180(초:3분)]  |
 | 옵션 | /X [EMPTY]  | 빈 파일생성 Y/N [Default:N (빈 파일생성 안함)]   |
 | 옵션 | /H [EXE INFO]  | 실행 옵션 정보  |
+
+## 프로그램 사용 샘플
+* /Sample/AdoToFormats_Help.bat
+* /Sample/AdoToFormats_JSON.bat
+* /Sample/AdoToFormats_XML.bat
+
+* testXML.bat :
+> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '1'" /O "D:\Batch\Data\Test\TestXML.xml" /I "Y" /D "M"
+> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestXML2.xml" /I "Y" /D "Y"
+> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestXML3.xml" /I "Y"
+> AdoToFormats /F "XML" /C "TESTDB" /S "Proc_Test7 '3'" /O "D:\Batch\Data\Test\TestXML4.xml" /I "Y" /D "Y" /X "Y"
+
+* testJSON.bat :
+```
+	AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '1'" /O "D:\Batch\Data\Test\TestJSON.json" /I "Y"
+	AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '2'" /O "D:\Batch\Data\Test\TestJSON2.json" /I "N"
+	AdoToFormats /F "JSON" /C "TESTDB" /S "Proc_Test7 '3'" /O "D:\Batch\Data\Test\TestJSON3.json" /I "N" /X "Y“
+```
